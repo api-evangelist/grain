@@ -1,8 +1,12 @@
 aid: grain
 name: Grain
-description: Grain is a company surfaced as a portfolio company of 500-global, bain-capital-ventures and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Grain is a Singapore-based online restaurant and catering company founded in 2013 that delivers
+  freshly prepared, thoughtfully sourced meals across Singapore. Its products include Meals On Demand (same-day
+  ready-to-eat delivery), wedding catering, event catering, gift cards, and the Grain Savers program, with
+  MUIS Halal and ISO certifications. Grain was surfaced in the API Evangelist network as a VC-portfolio stub
+  (500 Global among its early backers). As of this enrichment pass it publishes a consumer web storefront but
+  no public API, developer portal, OpenAPI, or other machine-readable API artifacts, so this profile captures
+  company identity and domain-security posture only.
 url: https://raw.githubusercontent.com/api-evangelist/grain/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +15,29 @@ x-backed-by:
 - bain-capital-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://grain.com.sg/og-image.jpg
 tags:
 - Company
+- Food
+- Food Delivery
+- Catering
+- Restaurant
+- Singapore
+- Ecommerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +47,18 @@ maintainers:
 common:
 - type: Website
   url: https://grain.com.sg
+- type: TermsOfService
+  url: https://grain.com.sg/terms
+- type: PrivacyPolicy
+  url: https://grain.com.sg/privacy-policy
+- type: Support
+  url: https://grain.com.sg/contact
+- type: HelpCenter
+  url: https://grain.notion.site/Frequently-asked-questions-cbd973134d1a47afbe37a17f4ef00118
+- type: DomainSecurity
+  url: security/grain-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
